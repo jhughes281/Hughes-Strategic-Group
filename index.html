@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hughes Strategic Group LLC — Strategic Sourcing & Procurement Support</title>
+  <meta name="description" content="Houston-based procurement and strategic sourcing support for government agencies, prime contractors, and commercial clients. SAM registered. CAGE: 17XV5." />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* HOME-SPECIFIC STYLES */
+    .hero {
+      background: var(--ink);
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      padding: 80px 48px 140px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0; opacity: 0.04; pointer-events: none;
+    }
+    .hero-content { max-width: 600px; position: relative; z-index: 2; }
+    .hero-eyebrow { display: flex; align-items: center; gap: 10px; margin-bottom: 24px; }
+    .hero-eyebrow-line { width: 32px; height: 1px; background: var(--gold); }
+    .hero-eyebrow-text { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold2); }
+    .hero h1 { font-family: 'Georgia', serif; font-size: 50px; color: #fff; line-height: 1.12; margin-bottom: 24px; font-weight: normal; }
+    .hero h1 i { color: var(--gold2); font-style: italic; }
+    .hero-sub { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 16px; color: rgba(255,255,255,0.65); line-height: 1.7; max-width: 480px; margin-bottom: 44px; }
+    .hero-btns { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .hero-creds {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      background: rgba(255,255,255,0.04);
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 20px 48px;
+      display: flex; gap: 0; flex-wrap: wrap; align-items: center; z-index: 2;
+    }
+    .hcred { display: flex; flex-direction: column; gap: 2px; padding: 0 32px 0 0; }
+    .hcred:first-child { padding-left: 0; }
+    .hcred-label { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink3); }
+    .hcred-value { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 12px; color: rgba(255,255,255,0.7); letter-spacing: 0.04em; }
+    .hcred-sep { width: 1px; height: 28px; background: rgba(255,255,255,0.1); margin-right: 32px; align-self: center; }
+
+    /* INTRO */
+    .intro-sec { background: var(--cream); }
+    .intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+    .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--sand3); }
+    .stat-cell { background: var(--cream); padding: 24px 20px; }
+    .stat-num { font-family: 'Georgia', serif; font-size: 32px; color: var(--ink); margin-bottom: 3px; }
+    .stat-desc { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink3); }
+
+    /* INDUSTRIES */
+    .ind-sec { background: var(--sand); }
+    .ind-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2px; background: var(--sand3); margin-top: 48px; }
+    .ind-card { background: var(--cream); padding: 36px 32px; border-left: 3px solid transparent; transition: border-color 0.2s, background 0.2s; }
+    .ind-card:hover { border-left-color: var(--rust); background: var(--white); }
+    .ind-icon { width: 40px; height: 40px; background: var(--rust-pale); display: flex; align-items: center; justify-content: center; margin-bottom: 18px; }
+    .ind-icon svg { width: 18px; height: 18px; stroke: var(--rust); fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+    .ind-title { font-family: 'Georgia', serif; font-size: 17px; color: var(--ink); margin-bottom: 8px; font-weight: normal; }
+    .ind-body { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 13px; color: var(--ink2); line-height: 1.7; margin-bottom: 14px; }
+    .ind-naics { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 10px; letter-spacing: 0.1em; color: var(--rust); background: var(--rust-pale); display: inline-block; padding: 3px 10px; }
+
+    /* SERVICES */
+    .svc-sec { background: var(--ink); }
+    .svc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: rgba(255,255,255,0.06); margin-top: 48px; }
+    .svc-card { background: var(--ink); padding: 32px 28px; transition: background 0.2s; }
+    .svc-card:hover { background: var(--slate); }
+    .svc-num { font-family: 'Georgia', serif; font-size: 48px; color: rgba(255,255,255,0.08); line-height: 1; margin-bottom: 12px; }
+    .svc-title { font-family: 'Georgia', serif; font-size: 16px; color: #fff; margin-bottom: 8px; font-weight: normal; }
+    .svc-body { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 13px; color: rgba(255,255,255,0.5); line-height: 1.7; }
+
+    /* CTA STRIP */
+    .cta-strip { background: var(--rust); padding: 64px 48px; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
+    .cta-strip h2 { font-family: 'Georgia', serif; font-size: 28px; color: #fff; font-weight: normal; max-width: 440px; line-height: 1.3; }
+
+    /* CONTACT SECTION */
+    .contact-sec { background: var(--sand); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 72px; }
+    .contact-info { display: flex; flex-direction: column; gap: 28px; }
+    .ci-item { display: flex; flex-direction: column; gap: 3px; }
+    .ci-label { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--rust); }
+    .ci-value { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 14px; color: var(--ink); line-height: 1.5; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    Hughes Strategic Group
+    <span>Procurement &amp; Sourcing Support</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="capabilities.html">Capabilities</a></li>
+    <li><a href="index.html#industries">Industries</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+  <a href="capabilities.html" class="nav-cta">Capability Statement</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <svg class="hero-bg" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <line x1="0" y1="0" x2="0" y2="700" stroke="white" stroke-width="0.5"/>
+    <line x1="120" y1="0" x2="120" y2="700" stroke="white" stroke-width="0.5"/>
+    <line x1="240" y1="0" x2="240" y2="700" stroke="white" stroke-width="0.5"/>
+    <line x1="360" y1="0" x2="360" y2="700" stroke="white" stroke-width="0.5"/>
+    <line x1="480" y1="0" x2="480" y2="700" stroke="white" stroke-width="0.5"/>
+    <line x1="600" y1="0" x2="600" y2="700" stroke="white" stroke-width="0.5"/>
+    <line x1="720" y1="0" x2="720" y2="700" stroke="white" stroke-width="0.5"/>
+    <line x1="840" y1="0" x2="840" y2="700" stroke="white" stroke-width="0.5"/>
+    <line x1="960" y1="0" x2="960" y2="700" stroke="white" stroke-width="0.5"/>
+    <line x1="1080" y1="0" x2="1080" y2="700" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="140" x2="1200" y2="140" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="280" x2="1200" y2="280" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="420" x2="1200" y2="420" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="560" x2="1200" y2="560" stroke="white" stroke-width="0.5"/>
+    <line x1="0" y1="700" x2="800" y2="0" stroke="white" stroke-width="1"/>
+    <line x1="400" y1="700" x2="1200" y2="0" stroke="white" stroke-width="0.5"/>
+  </svg>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-line"></div>
+      <span class="hero-eyebrow-text">Houston, TX &middot; Nationwide Capability</span>
+    </div>
+    <h1>Mission-Critical<br>Sourcing, <i>Delivered</i><br>with Precision</h1>
+    <p class="hero-sub">Strategic sourcing, RFQ coordination, vendor management, and logistics support for government agencies and prime contractors — fast, compliant, and dependable.</p>
+    <div class="hero-btns">
+      <a href="capabilities.html" class="btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        View Capability Statement
+      </a>
+      <a href="#contact" class="btn-ghost">Get in touch &rarr;</a>
+    </div>
+  </div>
+
+  <div class="hero-creds">
+    <div class="hcred"><span class="hcred-label">Registered</span><span class="hcred-value">SAM.gov Active</span></div>
+    <div class="hcred-sep"></div>
+    <div class="hcred"><span class="hcred-label">CAGE Code</span><span class="hcred-value">17XV5</span></div>
+    <div class="hcred-sep"></div>
+    <div class="hcred"><span class="hcred-label">UEI</span><span class="hcred-value">JL4TVJXLDEA1</span></div>
+    <div class="hcred-sep"></div>
+    <div class="hcred"><span class="hcred-label">Primary NAICS</span><span class="hcred-value">541614 — Logistics Consulting</span></div>
+    <div class="hcred-sep"></div>
+    <div class="hcred"><span class="hcred-label">Certifications</span><span class="hcred-value">OSHA-30 &middot; HIPAA Trained</span></div>
+  </div>
+</section>
+
+<!-- GOLD BAR -->
+<div class="gold-bar">
+  <div class="gold-bar-item">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    Federal Contractor Ready
+  </div>
+  <div class="gold-bar-dot"></div>
+  <div class="gold-bar-item">Furniture &amp; Office Wholesale</div>
+  <div class="gold-bar-dot"></div>
+  <div class="gold-bar-item">Parcel Locker Systems</div>
+  <div class="gold-bar-dot"></div>
+  <div class="gold-bar-item">HP Technology Vendor</div>
+  <div class="gold-bar-dot"></div>
+  <div class="gold-bar-item">Wholesale Gardening</div>
+  <div class="gold-bar-dot"></div>
+  <div class="gold-bar-item">Logistics &amp; Freight</div>
+</div>
+
+<!-- ABOUT / INTRO -->
+<section class="sec intro-sec">
+  <div class="intro-grid">
+    <div>
+      <div class="sec-label"><div class="sec-label-line"></div><span class="sec-label-text">About HSG</span></div>
+      <h2 class="sec-title">Procurement Support Built for the Public Sector</h2>
+      <p class="sec-body" style="margin-bottom:20px">Hughes Strategic Group LLC is a Houston-based procurement and sourcing support company helping government agencies, prime contractors, and commercial clients execute acquisition requirements with speed, accuracy, and documentation discipline.</p>
+      <p class="sec-body">We reduce procurement delays, improve supplier response times, and keep your team contract-ready — from initial sourcing through delivery.</p>
+    </div>
+    <div>
+      <div class="stat-grid">
+        <div class="stat-cell"><div class="stat-num">11</div><div class="stat-desc">NAICS Codes Active</div></div>
+        <div class="stat-cell"><div class="stat-num">4+</div><div class="stat-desc">Industries Served</div></div>
+        <div class="stat-cell"><div class="stat-num">SAM</div><div class="stat-desc">Registered &amp; Active</div></div>
+        <div class="stat-cell"><div class="stat-num">50</div><div class="stat-desc">States Sourcing Reach</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDUSTRIES -->
+<section class="sec ind-sec" id="industries">
+  <div class="sec-label"><div class="sec-label-line"></div><span class="sec-label-text">Industries We Serve</span></div>
+  <h2 class="sec-title">Active Market Sectors</h2>
+  <p class="sec-body">From office furniture to technology hardware — we source across commercial and government supply chains.</p>
+  <div class="ind-grid">
+
+    <div class="ind-card">
+      <div class="ind-icon">
+        <svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="1"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+      </div>
+      <div class="ind-title">Furniture &amp; Office Wholesale</div>
+      <p class="ind-body">Commercial and government furniture sourcing — office systems, seating, modular workstations, and institutional furnishings for federal and municipal facilities.</p>
+      <span class="ind-naics">NAICS 423210</span>
+    </div>
+
+    <div class="ind-card">
+      <div class="ind-icon">
+        <svg viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+      </div>
+      <div class="ind-title">Parcel Locker Systems</div>
+      <p class="ind-body">Package management infrastructure for government facilities, universities, residential complexes, and commercial properties — from procurement to logistics coordination.</p>
+      <span class="ind-naics">NAICS 484110 &middot; 484121</span>
+    </div>
+
+    <div class="ind-card">
+      <div class="ind-icon">
+        <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      </div>
+      <div class="ind-title">HP Technology Vendor</div>
+      <p class="ind-body">HP hardware procurement support — computers, peripherals, and enterprise equipment for government agencies, educational institutions, and commercial buyers.</p>
+      <span class="ind-naics">NAICS 334111 &middot; 334118 &middot; 423430</span>
+    </div>
+
+    <div class="ind-card">
+      <div class="ind-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 0 20"/><path d="M12 8c-2.5 0-4 1-4 4s1.5 4 4 4"/><path d="M8 12h8"/></svg>
+      </div>
+      <div class="ind-title">Wholesale Gardening &amp; Grounds</div>
+      <p class="ind-body">Horticultural supplies, landscaping materials, and grounds maintenance products for government facilities, parks departments, and institutional clients.</p>
+      <span class="ind-naics">NAICS 561720 &middot; 561210</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec svc-sec">
+  <div class="sec-label"><div class="sec-label-line gold"></div><span class="sec-label-text gold">Core Services</span></div>
+  <h2 class="sec-title light">What We Deliver</h2>
+  <div class="svc-grid">
+    <div class="svc-card">
+      <div class="svc-num">01</div>
+      <div class="svc-title">Strategic Sourcing &amp; RFQ Management</div>
+      <p class="svc-body">Supplier sourcing, quote comparisons, and procurement coordination to move buyers faster with better decision data.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">02</div>
+      <div class="svc-title">Vendor &amp; Supplier Coordination</div>
+      <p class="svc-body">Supplier communication, onboarding support, document collection, and readiness tracking to keep projects on schedule.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">03</div>
+      <div class="svc-title">Logistics &amp; Fulfillment</div>
+      <p class="svc-body">End-to-end coordination from sourcing to delivery — timelines, vendors, and operational logistics for smooth execution.</p>
+    </div>
+    <div class="svc-card">
+      <div class="svc-num">04</div>
+      <div class="svc-title">Government &amp; B2B Contract Support</div>
+      <p class="svc-body">Procurement documentation, sourcing assistance, and coordination for federal agencies, primes, and commercial buyers.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA STRIP -->
+<div class="cta-strip">
+  <h2>Ready to simplify your next procurement requirement?</h2>
+  <a href="capabilities.html" class="btn-dark">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    View Capability Statement
+  </a>
+</div>
+
+<!-- CONTACT -->
+<section class="sec contact-sec" id="contact">
+  <div class="contact-grid">
+    <div>
+      <div class="sec-label"><div class="sec-label-line"></div><span class="sec-label-text">Get In Touch</span></div>
+      <h2 class="sec-title">Let's Talk Procurement</h2>
+      <p class="sec-body" style="margin-bottom:40px">Whether you're a government agency, prime contractor, or commercial buyer — we're ready to support your next sourcing requirement.</p>
+      <div class="contact-info">
+        <div class="ci-item">
+          <span class="ci-label">Location</span>
+          <span class="ci-value">3050 Post Oak Blvd, Suite 510<br>Houston, TX 77056</span>
+        </div>
+        <div class="ci-item">
+          <span class="ci-label">SAM.gov Credentials</span>
+          <span class="ci-value">CAGE: 17XV5 &middot; UEI: JL4TVJXLDEA1</span>
+        </div>
+        <div class="ci-item">
+          <span class="ci-label">Certifications</span>
+          <span class="ci-value">OSHA-30 Certified &middot; HIPAA Trained</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <form class="contact-form" name="contact" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
+        <div class="form-row">
+          <input type="text" name="firstname" placeholder="First name" required />
+          <input type="text" name="lastname" placeholder="Last name" required />
+        </div>
+        <input type="email" name="email" placeholder="Email address" required />
+        <input type="text" name="organization" placeholder="Organization / Agency" />
+        <textarea name="message" placeholder="Tell us about your procurement requirement..."></textarea>
+        <button type="submit" class="btn-primary" style="align-self:flex-start">Send Message &rarr;</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Hughes Strategic Group LLC</div>
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="capabilities.html">Capabilities</a>
+    <a href="#industries">Industries</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="footer-copy">&copy; 2026 Hughes Strategic Group LLC &middot; Houston, TX</div>
+</footer>
+
+</body>
+</html>
