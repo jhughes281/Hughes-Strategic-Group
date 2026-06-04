@@ -7,115 +7,106 @@
 <meta name="description" content="HP business printers, accessories, ink and toner subscriptions, and supplies sourced through Hughes Strategic Group LLC. Request a quote today." />
 <link rel="stylesheet" href="css/style.css" />
 <style>
-.hp-hero { background: var(--ink); padding: 80px 48px 64px; position: relative; }
-.hp-hero h1 { font-family: 'Georgia', serif; font-size: 46px; color: #fff; font-weight: normal; line-height: 1.15; margin-bottom: 18px; }
-.hp-hero h1 i { color: var(--gold2); font-style: italic; }
-.hp-hero-sub { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 16px; color: rgba(255,255,255,0.6); line-height: 1.7; max-width: 580px; margin-bottom: 32px; }
-.hp-hero-btns { display: flex; gap: 18px; flex-wrap: wrap; align-items: center; }
-.hp-badge-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 36px; }
-.hp-badge { background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.7); font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border: 1px solid rgba(255,255,255,0.1); }
-.hp-sec { background: var(--cream); }
-.hp-sec.alt { background: var(--sand); }
-.hp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 44px; }
-.hp-card { background: var(--white); border: 1px solid var(--sand3); display: flex; flex-direction: column; transition: box-shadow 0.2s, transform 0.2s; }
-.hp-card:hover { box-shadow: 0 12px 30px rgba(13,27,42,0.1); transform: translateY(-3px); }
-.hp-card-img { height: 200px; background: var(--sand); display: flex; align-items: center; justify-content: center; padding: 20px; }
-.hp-card-img img { max-height: 160px; max-width: 100%; object-fit: contain; }
-.hp-card-img.noimg::after { content: 'HP'; font-family: 'Georgia', serif; font-size: 40px; color: var(--sand3); }
-.hp-card-body { padding: 24px 22px 26px; display: flex; flex-direction: column; flex: 1; }
-.hp-card-name { font-family: 'Georgia', serif; font-size: 17px; color: var(--ink); font-weight: normal; margin-bottom: 10px; line-height: 1.3; }
-.hp-card-desc { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 13px; color: var(--ink2); line-height: 1.65; margin-bottom: 14px; flex: 1; }
-.hp-card-spec { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 11px; letter-spacing: 0.06em; color: var(--rust); background: var(--rust-pale); padding: 5px 12px; display: inline-block; margin-bottom: 18px; align-self: flex-start; }
-.hp-quote-btn { background: var(--rust); color: #fff; padding: 12px 22px; font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; align-self: flex-start; transition: background 0.2s; }
-.hp-quote-btn:hover { background: var(--rust2); }
-.hp-quote-btn.small { padding: 10px 18px; font-size: 10px; }
-.hp-acc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: var(--sand3); margin-top: 44px; }
-.hp-acc-col { background: var(--white); padding: 36px 32px; }
-.hp-acc-title { font-family: 'Georgia', serif; font-size: 20px; color: var(--ink); font-weight: normal; margin-bottom: 18px; }
-.hp-acc-list { list-style: none; display: flex; flex-direction: column; gap: 10px; margin-bottom: 22px; }
-.hp-acc-list li { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 14px; color: var(--ink2); display: flex; align-items: flex-start; gap: 10px; }
-.hp-acc-list li::before { content: ''; width: 5px; height: 5px; background: var(--rust); border-radius: 50%; margin-top: 7px; flex-shrink: 0; }
-.hp-sub-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: rgba(255,255,255,0.06); margin-top: 44px; }
-.hp-sub-card { background: var(--ink); padding: 32px 28px; }
-.hp-sub-title { font-family: 'Georgia', serif; font-size: 18px; color: #fff; font-weight: normal; margin-bottom: 12px; }
-.hp-sub-desc { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 13px; color: rgba(255,255,255,0.55); line-height: 1.7; margin-bottom: 20px; }
-.hp-cta { background: var(--rust); padding: 64px 48px; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; }
-.hp-cta h2 { font-family: 'Georgia', serif; font-size: 30px; color: #fff; font-weight: normal; max-width: 480px; line-height: 1.3; }
-@media (max-width: 900px){ .hp-grid, .hp-sub-grid { grid-template-columns: 1fr; } .hp-acc-grid { grid-template-columns: 1fr; } }
+    .hp-hero { background: var(--ink); padding: 80px 48px 64px; position: relative; }
+    .hp-hero h1 { font-family: 'Georgia', serif; font-size: 46px; color: #fff; font-weight: normal; line-height: 1.15; margin-bottom: 18px; }
+    .hp-hero h1 i { color: var(--gold2); font-style: italic; }
+    .hp-hero-sub { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 16px; color: rgba(255,255,255,0.6); line-height: 1.7; max-width: 580px; margin-bottom: 32px; }
+    .hp-hero-btns { display: flex; gap: 18px; flex-wrap: wrap; align-items: center; }
+    .hp-badge-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 36px; }
+    .hp-badge { background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.7); font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; padding: 8px 14px; border-radius: 2px; }
+    .hp-sec { background: var(--cream); }
+    .hp-sec.alt { background: var(--sand); }
+    .hp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 44px; }
+    .hp-card { background: var(--white); border: 1px solid var(--sand3); display: flex; flex-direction: column; transition: box-shadow 0.2s, transform 0.2s; }
+    .hp-card:hover { box-shadow: 0 12px 30px rgba(13,27,42,0.1); transform: translateY(-3px); }
+    .hp-card-img { height: 200px; background: var(--sand); display: flex; align-items: center; justify-content: center; padding: 20px; }
+    .hp-card-img img { max-height: 160px; max-width: 100%; object-fit: contain; }
+    .hp-card-body { padding: 24px 22px 26px; display: flex; flex-direction: column; flex: 1; }
+    .hp-card-name { font-family: 'Georgia', serif; font-size: 17px; color: var(--ink); font-weight: normal; margin-bottom: 10px; line-height: 1.3; }
+    .hp-card-desc { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 13px; color: var(--ink2); line-height: 1.65; margin-bottom: 14px; flex: 1; }
+    .hp-card-spec { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 11px; letter-spacing: 0.06em; color: var(--rust); text-transform: uppercase; margin-bottom: 18px; }
+    .hp-quote-btn { display: inline-block; background: var(--ink); color: #fff; font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; padding: 12px 22px; text-decoration: none; align-self: flex-start; transition: background 0.2s; }
+    .hp-quote-btn:hover { background: var(--rust); }
+    .hp-quote-btn.small { padding: 9px 16px; font-size: 11px; }
+    .hp-acc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
+    .hp-acc-col { background: var(--white); border: 1px solid var(--sand3); padding: 32px 30px; }
+    .hp-acc-title { font-family: 'Georgia', serif; font-size: 20px; color: var(--ink); font-weight: normal; margin-bottom: 16px; }
+    .hp-acc-list { list-style: none; margin: 0 0 22px; padding: 0; }
+    .hp-acc-list li { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 14px; color: var(--ink2); padding: 8px 0 8px 18px; border-bottom: 1px solid var(--sand); position: relative; }
+    .hp-acc-list li::before { content: '—'; position: absolute; left: 0; color: var(--gold2); }
+    .hp-sub-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+    .hp-sub-card { background: var(--ink); padding: 30px 26px; color: #fff; }
+    .hp-sub-title { font-family: 'Georgia', serif; font-size: 19px; font-weight: normal; margin-bottom: 12px; color: var(--gold2); }
+    .hp-sub-desc { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 13px; color: rgba(255,255,255,0.65); line-height: 1.65; margin-bottom: 20px; }
+    .hp-cta { background: var(--rust); padding: 64px 48px; text-align: center; }
+    .hp-cta h2 { font-family: 'Georgia', serif; font-size: 32px; color: #fff; font-weight: normal; margin-bottom: 24px; }
+    @media (max-width: 860px) { .hp-grid, .hp-sub-grid { grid-template-columns: 1fr; } .hp-acc-grid { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
-
-<!-- NAV -->
 <nav>
-  <div class="nav-logo">
-    Hughes Strategic Group
-    <span>Procurement &amp; Sourcing Support</span>
-  </div>
+  <div class="nav-logo"><a href="index.html">Hughes Strategic Group</a></div>
   <ul class="nav-links">
     <li><a href="index.html">Home</a></li>
     <li><a href="capabilities.html">Capabilities</a></li>
-    <li><a href="hp.html" class="active">HP</a></li>
+    <li><a href="hp.html">HP</a></li>
     <li><a href="index.html#industries">Industries</a></li>
     <li><a href="index.html#contact">Contact</a></li>
   </ul>
-  <a href="capabilities.html" class="nav-cta">Capability Statement</a>
+  <div class="nav-cta"><a href="index.html#contact">Get in Touch</a></div>
 </nav>
 
-<!-- HP HERO -->
-<section class="hp-hero">
-  <div class="sec-label" style="margin-bottom:16px"><div class="sec-label-line gold"></div><span class="sec-label-text gold">Authorized HP Sourcing</span></div>
-  <h1>HP Business <i>Printing &amp; Imaging</i><br>Solutions</h1>
-  <p class="hp-hero-sub">Hughes Strategic Group sources the full range of HP business printers, multifunction devices, supplies, and managed print programs. Equip your office with reliable, secure, enterprise-grade hardware — and let us handle the procurement.</p>
-  <div class="hp-hero-btns">
-    <a href="#printers" class="btn-primary">Browse Products</a>
-    <a href="index.html#contact" class="btn-ghost">Request a Quote</a>
-  </div>
-  <div class="hp-badge-row">
-    <span class="hp-badge">Printers &amp; MFPs</span>
-    <span class="hp-badge">Scanners</span>
-    <span class="hp-badge">Ink &amp; Toner</span>
-    <span class="hp-badge">Paper &amp; Supplies</span>
-    <span class="hp-badge">Instant Ink Subscriptions</span>
-    <span class="hp-badge">Managed Print Services</span>
-  </div>
-</section>
+  <!-- HERO -->
+  <section class="hp-hero">
+    <h1>HP Business Printing &amp; <i>Imaging Solutions</i></h1>
+    <p class="hp-hero-sub">From high-volume enterprise printers to ink and toner subscriptions, we source the right HP hardware and supplies for your business — backed by competitive pricing and dependable fulfillment.</p>
+    <div class="hp-hero-btns">
+      <a href="index.html#contact" class="hp-quote-btn">Request a Quote &rarr;</a>
+    </div>
+    <div class="hp-badge-row">
+      <span class="hp-badge">Printers</span>
+      <span class="hp-badge">Scanners</span>
+      <span class="hp-badge">Ink &amp; Toner</span>
+      <span class="hp-badge">Paper &amp; Supplies</span>
+      <span class="hp-badge">Subscriptions</span>
+    </div>
+  </section>
 
-<!-- PRINTERS -->
-<section class="sec hp-sec" id="printers">
-  <div class="sec-label"><div class="sec-label-line"></div><span class="sec-label-text">Printers &amp; Multifunction</span></div>
-  <h2 class="sec-title">Printers for Every Workgroup</h2>
-  <p class="sec-body">From compact desktop units to high-volume departmental fleets — select the right HP device and request a tailored quote.</p>
-  <div class="hp-grid">
+  <!-- PRINTERS -->
+  <section class="sec hp-sec" id="printers">
+    <div class="sec-label"><div class="sec-label-line"></div><span class="sec-label-text">Printers &amp; Imaging</span></div>
+    <h2 class="sec-title">Printers Built for Business</h2>
+    <p class="sec-body">A curated lineup of HP printers and scanners for offices of every size — from monochrome workgroup units to high-volume color multifunction devices.</p>
+    <div class="hp-grid">
       <div class="hp-card">
-        <div class="hp-card-img"><img src="https://hp.widen.net/content/rb5axuponb/png/rb5axuponb.png" alt="HP Color LaserJet Enterprise MFP M480f" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('noimg')" /></div>
+        <div class="hp-card-img"><img src="https://hp.widen.net/content/rb5axuponb/png/rb5axuponb.png" alt="HP Color LaserJet Enterprise MFP M480f" loading="lazy" onerror="this.parentElement.classList.add('noimg');this.style.display='none';" /></div>
         <div class="hp-card-body">
           <h3 class="hp-card-name">HP Color LaserJet Enterprise MFP M480f</h3>
           <p class="hp-card-desc">High-volume color multifunction printer for busy offices. Print, copy, scan and fax with enterprise-grade security.</p>
-          <div class="hp-card-spec">Up to 57 ppm · 10–30 users · Two-sided</div>
+          <div class="hp-card-spec">Color laser · MFP · Network</div>
           <a href="index.html#contact" class="hp-quote-btn">Get a Quote &rarr;</a>
         </div>
       </div>
       <div class="hp-card">
-        <div class="hp-card-img"><img src="https://hp.widen.net/content/q9awzydgur/png/q9awzydgur.png" alt="HP LaserJet Enterprise MFP 6600dn" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('noimg')" /></div>
+        <div class="hp-card-img"><img src="https://hp.widen.net/content/q9awzydgur/png/q9awzydgur.png" alt="HP LaserJet Enterprise MFP 6600dn" loading="lazy" onerror="this.parentElement.classList.add('noimg');this.style.display='none';" /></div>
         <div class="hp-card-body">
           <h3 class="hp-card-name">HP LaserJet Enterprise MFP 6600dn</h3>
-          <p class="hp-card-desc">Advanced workflow MFP with built-in document routing for high-productivity teams.</p>
-          <div class="hp-card-spec">Up to 52 ppm · 5–15 users · Two-sided</div>
+          <p class="hp-card-desc">Advanced monochrome workflow MFP with built-in document routing for high-productivity teams.</p>
+          <div class="hp-card-spec">Mono laser · MFP · Duplex</div>
           <a href="index.html#contact" class="hp-quote-btn">Get a Quote &rarr;</a>
         </div>
       </div>
       <div class="hp-card">
-        <div class="hp-card-img"><img src="https://hp.widen.net/content/qevwoft0ow/png/qevwoft0ow.png" alt="HP LaserJet Enterprise MFP M528dn" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('noimg')" /></div>
+        <div class="hp-card-img"><img src="https://hp.widen.net/content/qevwoft0ow/png/qevwoft0ow.png" alt="HP LaserJet Enterprise MFP M528dn" loading="lazy" onerror="this.parentElement.classList.add('noimg');this.style.display='none';" /></div>
         <div class="hp-card-body">
           <h3 class="hp-card-name">HP LaserJet Enterprise MFP M528dn</h3>
-          <p class="hp-card-desc">Reliable monochrome printer designed for small business workgroups needing fast, crisp output.</p>
-          <div class="hp-card-spec">Up to 42 ppm · Compact · Two-sided</div>
+          <p class="hp-card-desc">Reliable monochrome multifunction printer designed for business workgroups needing fast, secure output.</p>
+          <div class="hp-card-spec">Mono laser · MFP · Secure</div>
           <a href="index.html#contact" class="hp-quote-btn">Get a Quote &rarr;</a>
         </div>
       </div>
       <div class="hp-card">
-        <div class="hp-card-img"><img src="https://hp.widen.net/content/nd6jbtzyao/png/nd6jbtzyao.png" alt="HP OfficeJet Pro 9130b All-in-One" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('noimg')" /></div>
+        <div class="hp-card-img"><img src="https://hp.widen.net/content/nd6jbtzyao/png/nd6jbtzyao.png" alt="HP OfficeJet Pro 9130b All-in-One" loading="lazy" onerror="this.parentElement.classList.add('noimg');this.style.display='none';" /></div>
         <div class="hp-card-body">
           <h3 class="hp-card-name">HP OfficeJet Pro 9130b All-in-One</h3>
           <p class="hp-card-desc">Affordable color inkjet all-in-one ideal for small offices and remote workers.</p>
@@ -124,7 +115,7 @@
         </div>
       </div>
       <div class="hp-card">
-        <div class="hp-card-img"><img src="https://hp.widen.net/content/mrqqgosjqs/png/mrqqgosjqs.png" alt="HP Color LaserJet Enterprise M856dn" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('noimg')" /></div>
+        <div class="hp-card-img"><img src="https://hp.widen.net/content/mrqqgosjqs/png/mrqqgosjqs.png" alt="HP Color LaserJet Enterprise M856dn" loading="lazy" onerror="this.parentElement.classList.add('noimg');this.style.display='none';" /></div>
         <div class="hp-card-body">
           <h3 class="hp-card-name">HP Color LaserJet Enterprise M856dn</h3>
           <p class="hp-card-desc">Vivid, professional color output with strong security for departmental printing.</p>
@@ -133,7 +124,7 @@
         </div>
       </div>
       <div class="hp-card">
-        <div class="hp-card-img"><img src="https://hp.widen.net/content/cdqywruki3/png/cdqywruki3.png" alt="HP ScanJet Enterprise Flow N6600 fnw1" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('noimg')" /></div>
+        <div class="hp-card-img"><img src="https://hp.widen.net/content/cdqywruki3/png/cdqywruki3.png" alt="HP ScanJet Enterprise Flow N6600 fnw1" loading="lazy" onerror="this.parentElement.classList.add('noimg');this.style.display='none';" /></div>
         <div class="hp-card-body">
           <h3 class="hp-card-name">HP ScanJet Enterprise Flow N6600 fnw1</h3>
           <p class="hp-card-desc">Fast duplex document scanner for digitizing high volumes of paperwork and records.</p>
@@ -141,52 +132,206 @@
           <a href="index.html#contact" class="hp-quote-btn">Get a Quote &rarr;</a>
         </div>
       </div>
-  </div>
-</section>
+    </div>
+  </section>
 
-<!-- ACCESSORIES -->
-<section class="sec hp-sec alt" id="accessories">
-  <div class="sec-label"><div class="sec-label-line"></div><span class="sec-label-text">Accessories &amp; Supplies</span></div>
-  <h2 class="sec-title">Paper, Ink &amp; Toner</h2>
-  <p class="sec-body">Keep every device running with genuine HP supplies. We source originals in bulk for predictable, business-grade results.</p>
-  <div class="hp-acc-grid">
+  <!-- ACCESSORIES -->
+  <section class="sec hp-sec alt" id="accessories">
+    <div class="sec-label"><div class="sec-label-line"></div><span class="sec-label-text">Accessories &amp; Supplies</span></div>
+    <h2 class="sec-title">Paper, Ink &amp; Toner</h2>
+    <p class="sec-body">Keep every device running with genuine HP supplies. We source originals in bulk for predictable, business-grade results.</p>
+    <div class="hp-acc-grid">
       <div class="hp-acc-col">
-        <h3 class="hp-acc-title">Paper & Printing Supplies</h3>
+        <h3 class="hp-acc-title">Paper &amp; Printing Supplies</h3>
         <ul class="hp-acc-list">
-          <li>HP Premium Multipurpose Paper (8.5x11, case)</li>
-          <li>HP Office20 Paper for everyday printing</li>
-          <li>HP Glossy Brochure & Presentation Paper</li>
-          <li>HP Recycled Office Paper (FSC certified)</li>
+          <li>HP Multipurpose &amp; Office Paper (cases &amp; pallets)</li>
+          <li>HP Glossy Brochure &amp; Presentation Paper</li>
+          <li>HP Premium Photo &amp; Specialty Media</li>
+          <li>Labels, Envelopes &amp; Card Stock</li>
         </ul>
         <a href="index.html#contact" class="hp-quote-btn small">Get a Quote &rarr;</a>
       </div>
       <div class="hp-acc-col">
-        <h3 class="hp-acc-title">Ink & Toner</h3>
+        <h3 class="hp-acc-title">Ink &amp; Toner</h3>
         <ul class="hp-acc-list">
-          <li>Original HP Toner Cartridges (mono & color)</li>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HP Products — Hughes Strategic Group LLC</title>
+<meta name="description" content="HP business printers, accessories, ink and toner subscriptions, and supplies sourced through Hughes Strategic Group LLC. Request a quote today." />
+<link rel="stylesheet" href="css/style.css" />
+<style>
+    .hp-hero { background: var(--ink); padding: 80px 48px 64px; position: relative; }
+    .hp-hero h1 { font-family: 'Georgia', serif; font-size: 46px; color: #fff; font-weight: normal; line-height: 1.15; margin-bottom: 18px; }
+    .hp-hero h1 i { color: var(--gold2); font-style: italic; }
+    .hp-hero-sub { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 16px; color: rgba(255,255,255,0.6); line-height: 1.7; max-width: 580px; margin-bottom: 32px; }
+    .hp-hero-btns { display: flex; gap: 18px; flex-wrap: wrap; align-items: center; }
+    .hp-badge-row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 36px; }
+    .hp-badge { background: rgba(255,255,255,0.06); color: rgba(255,255,255,0.7); font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; padding: 8px 14px; border-radius: 2px; }
+    .hp-sec { background: var(--cream); }
+    .hp-sec.alt { background: var(--sand); }
+    .hp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 44px; }
+    .hp-card { background: var(--white); border: 1px solid var(--sand3); display: flex; flex-direction: column; transition: box-shadow 0.2s, transform 0.2s; }
+    .hp-card:hover { box-shadow: 0 12px 30px rgba(13,27,42,0.1); transform: translateY(-3px); }
+    .hp-card-img { height: 200px; background: var(--sand); display: flex; align-items: center; justify-content: center; padding: 20px; }
+    .hp-card-img img { max-height: 160px; max-width: 100%; object-fit: contain; }
+    .hp-card-body { padding: 24px 22px 26px; display: flex; flex-direction: column; flex: 1; }
+    .hp-card-name { font-family: 'Georgia', serif; font-size: 17px; color: var(--ink); font-weight: normal; margin-bottom: 10px; line-height: 1.3; }
+    .hp-card-desc { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 13px; color: var(--ink2); line-height: 1.65; margin-bottom: 14px; flex: 1; }
+    .hp-card-spec { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 11px; letter-spacing: 0.06em; color: var(--rust); text-transform: uppercase; margin-bottom: 18px; }
+    .hp-quote-btn { display: inline-block; background: var(--ink); color: #fff; font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; padding: 12px 22px; text-decoration: none; align-self: flex-start; transition: background 0.2s; }
+    .hp-quote-btn:hover { background: var(--rust); }
+    .hp-quote-btn.small { padding: 9px 16px; font-size: 11px; }
+    .hp-acc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 40px; }
+    .hp-acc-col { background: var(--white); border: 1px solid var(--sand3); padding: 32px 30px; }
+    .hp-acc-title { font-family: 'Georgia', serif; font-size: 20px; color: var(--ink); font-weight: normal; margin-bottom: 16px; }
+    .hp-acc-list { list-style: none; margin: 0 0 22px; padding: 0; }
+    .hp-acc-list li { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 14px; color: var(--ink2); padding: 8px 0 8px 18px; border-bottom: 1px solid var(--sand); position: relative; }
+    .hp-acc-list li::before { content: '—'; position: absolute; left: 0; color: var(--gold2); }
+    .hp-sub-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+    .hp-sub-card { background: var(--ink); padding: 30px 26px; color: #fff; }
+    .hp-sub-title { font-family: 'Georgia', serif; font-size: 19px; font-weight: normal; margin-bottom: 12px; color: var(--gold2); }
+    .hp-sub-desc { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 13px; color: rgba(255,255,255,0.65); line-height: 1.65; margin-bottom: 20px; }
+    .hp-cta { background: var(--rust); padding: 64px 48px; text-align: center; }
+    .hp-cta h2 { font-family: 'Georgia', serif; font-size: 32px; color: #fff; font-weight: normal; margin-bottom: 24px; }
+    @media (max-width: 860px) { .hp-grid, .hp-sub-grid { grid-template-columns: 1fr; } .hp-acc-grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<nav>
+    <div class="nav-logo">Hughes Strategic Group <span>Procurement &amp; Sourcing Support</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="capabilities.html">Capabilities</a></li>
+      <li><a href="hp.html" class="active">HP</a></li>
+      <li><a href="index.html#industries">Industries</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hp-hero">
+    <h1>HP Business Printing &amp; <i>Imaging Solutions</i></h1>
+    <p class="hp-hero-sub">From high-volume enterprise printers to ink and toner subscriptions, we source the right HP hardware and supplies for your business — backed by competitive pricing and dependable fulfillment.</p>
+    <div class="hp-hero-btns">
+      <a href="index.html#contact" class="hp-quote-btn">Request a Quote &rarr;</a>
+    </div>
+    <div class="hp-badge-row">
+      <span class="hp-badge">Printers</span>
+      <span class="hp-badge">Scanners</span>
+      <span class="hp-badge">Ink &amp; Toner</span>
+      <span class="hp-badge">Paper &amp; Supplies</span>
+      <span class="hp-badge">Subscriptions</span>
+    </div>
+  </section>
+
+  <!-- PRINTERS -->
+  <section class="sec hp-sec" id="printers">
+    <div class="sec-label"><div class="sec-label-line"></div><span class="sec-label-text">Printers &amp; Imaging</span></div>
+    <h2 class="sec-title">Printers Built for Business</h2>
+    <p class="sec-body">A curated lineup of HP printers and scanners for offices of every size — from monochrome workgroup units to high-volume color multifunction devices.</p>
+    <div class="hp-grid">
+      <div class="hp-card">
+        <div class="hp-card-img"><img src="https://hp.widen.net/content/rb5axuponb/png/rb5axuponb.png" alt="HP Color LaserJet Enterprise MFP M480f" loading="lazy" onerror="this.parentElement.classList.add('noimg');this.style.display='none';" /></div>
+        <div class="hp-card-body">
+          <h3 class="hp-card-name">HP Color LaserJet Enterprise MFP M480f</h3>
+          <p class="hp-card-desc">High-volume color multifunction printer for busy offices. Print, copy, scan and fax with enterprise-grade security.</p>
+          <div class="hp-card-spec">Color laser · MFP · Network</div>
+          <a href="index.html#contact" class="hp-quote-btn">Get a Quote &rarr;</a>
+        </div>
+      </div>
+      <div class="hp-card">
+        <div class="hp-card-img"><img src="https://hp.widen.net/content/q9awzydgur/png/q9awzydgur.png" alt="HP LaserJet Enterprise MFP 6600dn" loading="lazy" onerror="this.parentElement.classList.add('noimg');this.style.display='none';" /></div>
+        <div class="hp-card-body">
+          <h3 class="hp-card-name">HP LaserJet Enterprise MFP 6600dn</h3>
+          <p class="hp-card-desc">Advanced monochrome workflow MFP with built-in document routing for high-productivity teams.</p>
+          <div class="hp-card-spec">Mono laser · MFP · Duplex</div>
+          <a href="index.html#contact" class="hp-quote-btn">Get a Quote &rarr;</a>
+        </div>
+      </div>
+      <div class="hp-card">
+        <div class="hp-card-img"><img src="https://hp.widen.net/content/qevwoft0ow/png/qevwoft0ow.png" alt="HP LaserJet Enterprise MFP M528dn" loading="lazy" onerror="this.parentElement.classList.add('noimg');this.style.display='none';" /></div>
+        <div class="hp-card-body">
+          <h3 class="hp-card-name">HP LaserJet Enterprise MFP M528dn</h3>
+          <p class="hp-card-desc">Reliable monochrome multifunction printer designed for business workgroups needing fast, secure output.</p>
+          <div class="hp-card-spec">Mono laser · MFP · Secure</div>
+          <a href="index.html#contact" class="hp-quote-btn">Get a Quote &rarr;</a>
+        </div>
+      </div>
+      <div class="hp-card">
+        <div class="hp-card-img"><img src="https://hp.widen.net/content/nd6jbtzyao/png/nd6jbtzyao.png" alt="HP OfficeJet Pro 9130b All-in-One" loading="lazy" onerror="this.parentElement.classList.add('noimg');this.style.display='none';" /></div>
+        <div class="hp-card-body">
+          <h3 class="hp-card-name">HP OfficeJet Pro 9130b All-in-One</h3>
+          <p class="hp-card-desc">Affordable color inkjet all-in-one ideal for small offices and remote workers.</p>
+          <div class="hp-card-spec">Color inkjet · All-in-one · Wireless</div>
+          <a href="index.html#contact" class="hp-quote-btn">Get a Quote &rarr;</a>
+        </div>
+      </div>
+      <div class="hp-card">
+        <div class="hp-card-img"><img src="https://hp.widen.net/content/mrqqgosjqs/png/mrqqgosjqs.png" alt="HP Color LaserJet Enterprise M856dn" loading="lazy" onerror="this.parentElement.classList.add('noimg');this.style.display='none';" /></div>
+        <div class="hp-card-body">
+          <h3 class="hp-card-name">HP Color LaserJet Enterprise M856dn</h3>
+          <p class="hp-card-desc">Vivid, professional color output with strong security for departmental printing.</p>
+          <div class="hp-card-spec">Color laser · High volume · Secure</div>
+          <a href="index.html#contact" class="hp-quote-btn">Get a Quote &rarr;</a>
+        </div>
+      </div>
+      <div class="hp-card">
+        <div class="hp-card-img"><img src="https://hp.widen.net/content/cdqywruki3/png/cdqywruki3.png" alt="HP ScanJet Enterprise Flow N6600 fnw1" loading="lazy" onerror="this.parentElement.classList.add('noimg');this.style.display='none';" /></div>
+        <div class="hp-card-body">
+          <h3 class="hp-card-name">HP ScanJet Enterprise Flow N6600 fnw1</h3>
+          <p class="hp-card-desc">Fast duplex document scanner for digitizing high volumes of paperwork and records.</p>
+          <div class="hp-card-spec">Document scanner · Duplex · ADF</div>
+          <a href="index.html#contact" class="hp-quote-btn">Get a Quote &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACCESSORIES -->
+  <section class="sec hp-sec alt" id="accessories">
+    <div class="sec-label"><div class="sec-label-line"></div><span class="sec-label-text">Accessories &amp; Supplies</span></div>
+    <h2 class="sec-title">Paper, Ink &amp; Toner</h2>
+    <p class="sec-body">Keep every device running with genuine HP supplies. We source originals in bulk for predictable, business-grade results.</p>
+    <div class="hp-acc-grid">
+      <div class="hp-acc-col">
+        <h3 class="hp-acc-title">Paper &amp; Printing Supplies</h3>
+        <ul class="hp-acc-list">
+          <li>HP Multipurpose &amp; Office Paper (cases &amp; pallets)</li>
+          <li>HP Glossy Brochure &amp; Presentation Paper</li>
+          <li>HP Premium Photo &amp; Specialty Media</li>
+          <li>Labels, Envelopes &amp; Card Stock</li>
+        </ul>
+        <a href="index.html#contact" class="hp-quote-btn small">Get a Quote &rarr;</a>
+      </div>
+      <div class="hp-acc-col">
+        <h3 class="hp-acc-title">Ink &amp; Toner</h3>
+        <ul class="hp-acc-list">
+          <li>Original HP Toner Cartridges (mono &amp; color)</li>
           <li>Original HP Ink Cartridges</li>
-          <li>HP High-Yield Toner for high-volume offices</li>
-          <li>HP Toner Collection / recycling units</li>
+          <li>High-Yield &amp; Contract Cartridges</li>
+          <li>Maintenance Kits &amp; Drums</li>
         </ul>
         <a href="index.html#contact" class="hp-quote-btn small">Get a Quote &rarr;</a>
       </div>
-  </div>
-</section>
+    </div>
+  </section>
 
-<!-- SUBSCRIPTIONS -->
-<section class="sec" style="background:var(--ink)" id="subscriptions">
-  <div class="sec-label"><div class="sec-label-line gold"></div><span class="sec-label-text gold">Subscriptions &amp; Services</span></div>
-  <h2 class="sec-title light">Never Run Out. Never Slow Down.</h2>
-  <p class="sec-body light">Subscription and managed print programs that automate supplies and reduce total cost of ownership across your fleet.</p>
-  <div class="hp-sub-grid">
+  <!-- SUBSCRIPTIONS -->
+  <section class="sec hp-sec" id="subscriptions">
+    <div class="sec-label"><div class="sec-label-line"></div><span class="sec-label-text">Subscriptions &amp; Services</span></div>
+    <h2 class="sec-title">Ink &amp; Print Subscriptions</h2>
+    <p class="sec-body">Stop running out of supplies. Subscription and managed-print options deliver ink and toner automatically, so your team never faces downtime.</p>
+    <div class="hp-sub-grid">
       <div class="hp-sub-card">
         <h3 class="hp-sub-title">HP Instant Ink</h3>
-        <p class="hp-sub-desc">Automatic ink delivery subscription — HP monitors ink levels and ships replacements before you run out. Plans scale by monthly page count.</p>
+        <p class="hp-sub-desc">Automatic ink delivery based on usage — cartridges arrive before you run out, billed on a simple monthly plan.</p>
         <a href="index.html#contact" class="hp-quote-btn small">Get a Quote &rarr;</a>
       </div>
       <div class="hp-sub-card">
         <h3 class="hp-sub-title">Managed Print Services</h3>
-        <p class="hp-sub-desc">Fully managed fleet program covering hardware, supplies, maintenance, and usage reporting under one predictable monthly cost.</p>
+        <p class="hp-sub-desc">End-to-end management of your print fleet — supplies, service, and reporting under one predictable agreement.</p>
         <a href="index.html#contact" class="hp-quote-btn small">Get a Quote &rarr;</a>
       </div>
       <div class="hp-sub-card">
@@ -194,24 +339,23 @@
         <p class="hp-sub-desc">Scheduled toner replenishment for laser fleets so workgroups never face downtime from empty cartridges.</p>
         <a href="index.html#contact" class="hp-quote-btn small">Get a Quote &rarr;</a>
       </div>
-  </div>
-</section>
+    </div>
+  </section>
 
-<!-- CTA -->
-<section class="hp-cta">
-  <h2>Ready to equip your office with HP? Let’s build your quote.</h2>
-  <a href="index.html#contact" class="btn-white">Request a Quote &rarr;</a>
-</section>
+  <!-- CTA -->
+  <section class="hp-cta">
+    <h2>Ready to equip your office with HP? Let’s build your quote.</h2>
+    <a href="index.html#contact" class="btn-white">Request a Quote &rarr;</a>
+  </section>
 
-<footer>
-  <div class="footer-logo">Hughes Strategic Group LLC</div>
-  <div class="footer-links">
-    <a href="index.html">Home</a>
-    <a href="capabilities.html">Capabilities</a>
-    <a href="hp.html">HP Products</a>
-    <a href="index.html#contact">Contact</a>
-  </div>
-</footer>
-
+  <footer>
+    <div class="footer-logo">Hughes Strategic Group LLC</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="capabilities.html">Capabilities</a>
+      <a href="hp.html">HP Products</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </footer>
 </body>
 </html>
