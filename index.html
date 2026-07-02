@@ -94,7 +94,7 @@
     <li><a href="index.html" class="active">Home</a></li>
     <li><a href="capabilities.html">Capabilities</a></li>
     <li><a href="hp.html">HP</a></li>
-    <li><a href="mudbuggin.html">Mudbuggin</a></li>
+    <li><a href="index.html#ventures">Ventures</a></li>
     <li><a href="index.html#industries">Industries</a></li>
     <li><a href="index.html#contact">Contact</a></li>
   </ul>
@@ -288,6 +288,51 @@
     </div>
   </div>
 </section>
+
+<!-- VENTURES & STRATEGIC PARTNERS -->
+<section class="sec ventures-sec" id="ventures">
+  <div class="sec-label"><div class="sec-label-line"></div><span class="sec-label-text">Ventures &amp; Strategic Partners</span></div>
+  <h2 class="sec-title">The Hughes Portfolio</h2>
+  <p class="sec-body">Beyond procurement, Hughes Strategic Group builds and backs a growing portfolio of ventures &mdash; companies we own outright and partnerships we help lead.</p>
+  <div class="venture-grid">
+
+    <div class="venture-card">
+      <span class="vt-tag vt-jv">Joint Venture</span>
+      <h3 class="vt-name">Mudbuggin Seafood</h3>
+      <p class="vt-body">Louisiana-style seafood boils and market &mdash; online ordering, pickup, and catering. A joint venture with Hughes Living Co.</p>
+      <a href="https://mudbugginseafood.com" target="_blank" rel="noopener" class="vt-link">Visit Mudbuggin &rarr;</a>
+    </div>
+
+    <div class="venture-card">
+      <span class="vt-tag vt-owned">Owned</span>
+      <h3 class="vt-name">HSG Lockers</h3>
+      <p class="vt-body">Smart parcel, food, and asset lockers for multifamily, retail, and corporate properties across Houston and Texas.</p>
+      <a href="https://jhughes281.github.io/HSG-Lockers/" target="_blank" rel="noopener" class="vt-link">Visit HSG Lockers &rarr;</a>
+    </div>
+
+    <div class="venture-card">
+      <span class="vt-tag vt-owned">Owned</span>
+      <h3 class="vt-name">HSG Entertainment</h3>
+      <p class="vt-body">Event and party vending machines &mdash; interactive, self-serve concessions for venues, parties, and gatherings.</p>
+      <a href="https://jhughes281.github.io/HSG-Entertainment/" target="_blank" rel="noopener" class="vt-link">Visit HSG Entertainment &rarr;</a>
+    </div>
+
+  </div>
+</section>
+<style>
+.ventures-sec { background: var(--cream); }
+.venture-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--sand3); margin-top: 48px; }
+.venture-card { background: var(--cream); padding: 36px 32px; display: flex; flex-direction: column; align-items: flex-start; border-top: 3px solid transparent; transition: border-color 0.2s, background 0.2s; }
+.venture-card:hover { border-top-color: var(--rust); background: var(--white); }
+.vt-tag { font-family: 'Arial Narrow','Arial',sans-serif; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 12px; margin-bottom: 18px; border-radius: 2px; }
+.vt-owned { background: var(--rust-pale); color: var(--rust); }
+.vt-jv { background: rgba(15,40,60,0.08); color: var(--ink); border: 1px solid rgba(15,40,60,0.18); }
+.vt-name { font-family: 'Georgia', serif; font-size: 21px; color: var(--ink); margin-bottom: 12px; font-weight: normal; }
+.vt-body { font-family: 'Arial Narrow','Arial',sans-serif; font-size: 13.5px; color: var(--ink2); line-height: 1.7; margin-bottom: 20px; flex: 1; }
+.vt-link { font-family: 'Arial Narrow','Arial',sans-serif; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--rust); text-decoration: none; font-weight: bold; }
+.vt-link:hover { color: var(--ink); }
+@media (max-width: 800px) { .venture-grid { grid-template-columns: 1fr; } }
+</style>
 
 <!-- CTA STRIP -->
 <div class="cta-strip">
