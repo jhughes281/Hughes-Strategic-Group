@@ -18,3 +18,12 @@ h1,h2,h3,.sec-title{font-family:Manrope,Arial,sans-serif!important;letter-spacin
 .cap-hero h1 i,.hp-hero h1 i{font-style:normal;color:#c5a879}
 @media(max-width:900px){.hsg-toggle{display:block}.hsg-links{display:none;position:absolute;top:81px;left:0;right:0;background:#fff;padding:20px 28px;box-shadow:0 10px 20px #0002;flex-direction:column;align-items:stretch}.hsg-links.open{display:flex}}
 @media(max-width:600px){.hsg-nav{padding:0 20px}.cap-hero,.hp-hero{padding:65px 20px!important}.cap-hero h1,.hp-hero h1{font-size:clamp(2rem,9vw,3rem)!important}}
+
+/* Navigation contrast and layout isolation from legacy global nav selectors */
+header.hsg-header{background:#fff!important;color:#152538!important;width:100%;box-shadow:none}
+header.hsg-header .hsg-nav{background:#fff!important;width:100%;max-width:1190px;min-height:82px;padding:0 28px;margin:0 auto;display:flex;flex-direction:row;align-items:center;justify-content:space-between}
+header.hsg-header .hsg-links{background:#fff!important;color:#152538!important;flex-direction:row;align-items:center}
+header.hsg-header .hsg-links a:not(.hsg-cta){color:#152538!important;opacity:1!important}
+header.hsg-header .hsg-links a:not(.hsg-cta):hover{color:#1c456c!important}
+header.hsg-header .hsg-links .hsg-cta{background:#102238!important;color:#fff!important}
+@media(max-width:900px){header.hsg-header .hsg-links{display:none;position:absolute;top:81px;left:0;right:0;flex-direction:column;align-items:stretch;padding:20px 28px;background:#fff!important}header.hsg-header .hsg-links.open{display:flex}}
