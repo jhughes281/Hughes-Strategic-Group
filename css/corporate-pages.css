@@ -1,0 +1,20 @@
+/* Unified HSG 2026 internal page shell */
+:root{--hsg-navy:#102238;--hsg-blue:#1c456c;--hsg-gold:#b99861;--hsg-text:#152538}
+body{font-family:Inter,Arial,sans-serif!important;color:var(--hsg-text)}
+h1,h2,h3,.sec-title{font-family:Manrope,Arial,sans-serif!important;letter-spacing:-.025em}
+.hsg-header{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid #dce3eb}
+.hsg-nav{max-width:1190px;margin:auto;padding:0 28px;min-height:82px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.hsg-logo{text-decoration:none!important;color:var(--hsg-navy)!important;font:800 21px/1.1 Manrope,Arial,sans-serif!important;letter-spacing:-.04em}
+.hsg-logo span{display:block;color:#586879;font:600 9px/1.5 Inter,Arial,sans-serif;letter-spacing:.17em;margin-top:5px}
+.hsg-links{display:flex;align-items:center;gap:20px}
+.hsg-links a{color:var(--hsg-text)!important;text-decoration:none!important;font:700 13px Inter,Arial,sans-serif!important}
+.hsg-links .hsg-cta{background:var(--hsg-navy)!important;color:#fff!important;padding:15px 19px;border-radius:3px}
+.hsg-toggle{display:none;background:#fff;border:1px solid #dce3eb;padding:8px 12px;font-size:21px}
+.hsg-footer{background:#0b1828;color:#d6e0ea;padding:45px 28px;font:14px/1.8 Inter,Arial,sans-serif}
+.hsg-footer-inner{max-width:1134px;margin:auto;display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}
+.hsg-footer a{color:#d6e0ea;text-decoration:none;margin-right:14px}
+.cap-hero,.hp-hero{background:var(--hsg-navy)!important}
+.cap-hero h1,.hp-hero h1{font-family:Manrope,Arial,sans-serif!important;font-weight:700!important}
+.cap-hero h1 i,.hp-hero h1 i{font-style:normal;color:#c5a879}
+@media(max-width:900px){.hsg-toggle{display:block}.hsg-links{display:none;position:absolute;top:81px;left:0;right:0;background:#fff;padding:20px 28px;box-shadow:0 10px 20px #0002;flex-direction:column;align-items:stretch}.hsg-links.open{display:flex}}
+@media(max-width:600px){.hsg-nav{padding:0 20px}.cap-hero,.hp-hero{padding:65px 20px!important}.cap-hero h1,.hp-hero h1{font-size:clamp(2rem,9vw,3rem)!important}}
