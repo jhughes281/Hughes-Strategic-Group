@@ -55,25 +55,8 @@
     .dl-strip h3 { font-family: 'Georgia', serif; font-size: 24px; color: #fff; font-weight: normal; max-width: 420px; line-height: 1.35; }
     .dl-strip p { font-family: 'Arial Narrow', 'Arial', sans-serif; font-size: 13px; color: rgba(255,255,255,0.55); margin-top: 6px; }
   </style>
-</head>
-<body>
-
-<!-- NAV -->
-<nav>
-  <div class="nav-logo">
-    Hughes Strategic Group
-    <span>Procurement &amp; Sourcing Support</span>
-  </div>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="capabilities.html" class="active">Capabilities</a></li>
-    <li><a href="hp.html">HP</a></li>
-    <li><a href="index.html#ventures">Ventures</a></li>
-    <li><a href="index.html#industries">Industries</a></li>
-    <li><a href="index.html#contact">Contact</a></li>
-  </ul>
-  <a href="capabilities.html" class="nav-cta">Capability Statement</a>
-</nav>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/corporate-pages.css"></head>
+<body><header class="hsg-header"><div class="hsg-nav"><a class="hsg-logo" href="index.html">HSG<span>HUGHES STRATEGIC GROUP</span></a><button class="hsg-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="hsg-navigation">☰</button><nav class="hsg-links" id="hsg-navigation" aria-label="Main navigation"><a href="index.html#solutions">Solutions</a><a href="capabilities.html">Government Contracting</a><a href="index.html#about">Our Group</a><a href="index.html#portfolio">Portfolio</a><a href="hp.html">Technology</a><a class="hsg-cta" href="index.html#contact">Request a Quote →</a></nav></div></header>
 
 <!-- HERO -->
 <section class="cap-hero">
@@ -283,16 +266,7 @@
 </div>
 
 <!-- FOOTER -->
-<footer>
-  <div class="footer-logo">Hughes Strategic Group LLC</div>
-  <div class="footer-links">
-    <a href="index.html">Home</a>
-    <a href="capabilities.html">Capabilities</a>
-    <a href="index.html#industries">Industries</a>
-    <a href="index.html#contact">Contact</a>
-  </div>
-  <div class="footer-copy">&copy; 2026 Hughes Strategic Group LLC &middot; Houston, TX</div>
-</footer>
+<footer class="hsg-footer"><div class="hsg-footer-inner"><div><strong>HUGHES STRATEGIC GROUP LLC</strong><div>Operational excellence through strategic sourcing.</div><small>© 2026 Hughes Strategic Group LLC · Houston, TX</small></div><div><a href="index.html">Home</a><a href="capabilities.html">Capabilities</a><a href="hp.html">Technology</a><a href="index.html#contact">Contact</a></div></div></footer><script>const hsgToggle=document.querySelector('.hsg-toggle'),hsgLinks=document.querySelector('.hsg-links');hsgToggle.addEventListener('click',()=>{const open=hsgLinks.classList.toggle('open');hsgToggle.setAttribute('aria-expanded',String(open))});hsgLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{hsgLinks.classList.remove('open');hsgToggle.setAttribute('aria-expanded','false')}))</script>
 
 </body>
 </html>
