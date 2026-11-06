@@ -27,3 +27,6 @@ header.hsg-header .hsg-links a:not(.hsg-cta){color:#152538!important;opacity:1!i
 header.hsg-header .hsg-links a:not(.hsg-cta):hover{color:#1c456c!important}
 header.hsg-header .hsg-links .hsg-cta{background:#102238!important;color:#fff!important}
 @media(max-width:900px){header.hsg-header .hsg-links{display:none;position:absolute;top:81px;left:0;right:0;flex-direction:column;align-items:stretch;padding:20px 28px;background:#fff!important}header.hsg-header .hsg-links.open{display:flex}}
+
+/* Footer links wrap on narrow screens */
+.hsg-footer-inner>div:last-child{display:flex;flex-wrap:wrap;row-gap:6px}

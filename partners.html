@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Partner With Us | Hughes Strategic Group</title>
+  <meta name="description" content="Specialty businesses can apply to partner with Hughes Strategic Group as subcontractors, suppliers, referral partners or joint ventures. Individuals can apply to work with our ventures." />
+  <link rel="canonical" href="https://hughesstrategic.net/partners.html" />
+  <link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/corporate-pages.css">
+  <style>
+    :root{--navy:#102238;--blue:#1c456c;--gold:#b99861;--ink:#152538;--muted:#586879;--line:#dce3eb;--pale:#f5f7fa;--err:#a3362a}
+    *{box-sizing:border-box} body{margin:0;background:#fff;font:16px/1.7 Inter,Arial,sans-serif;color:var(--ink)}
+    .hsg-logo img{display:block;height:52px;width:auto;max-width:100%}
+    .wrap{max-width:1190px;margin:auto;padding:0 28px}
+    .eyebrow{font-size:.73rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+    h1,h2,h3{font-family:Manrope,Arial,sans-serif;line-height:1.18;letter-spacing:-.035em}
+
+    .pt-hero{background:var(--navy);color:#fff;padding:95px 0 85px}
+    .pt-hero h1{font-size:clamp(2.4rem,4.8vw,4.4rem);max-width:860px;margin:18px 0 22px;font-weight:700}
+    .pt-hero p{max-width:640px;color:#c3d1df;font-size:1.1rem;margin:0}
+
+    .pt-sec{background:var(--pale);padding:90px 0 105px}
+    .pt-grid{display:grid;grid-template-columns:1fr 1.55fr;gap:65px;align-items:start}
+    .pt-grid h2{font-size:clamp(1.7rem,2.6vw,2.3rem);margin:10px 0 18px}
+    .pt-how{border-top:1px solid var(--line)}
+    .pt-step{display:grid;grid-template-columns:34px 1fr;gap:12px;padding:20px 0;border-bottom:1px solid var(--line)}
+    .pt-step b{font:800 .8rem Manrope,sans-serif;letter-spacing:.12em;color:var(--gold);padding-top:3px}
+    .pt-step h3{font-size:1.05rem;margin:0 0 4px}
+    .pt-step p{margin:0;color:var(--muted);font-size:.9rem}
+    .pt-note{color:var(--muted);font-size:.8rem;margin-top:22px}
+
+    .pt-switch{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--navy);border-radius:3px;overflow:hidden;margin-bottom:22px;background:#fff}
+    .pt-switch button{min-height:52px;background:transparent;border:0;cursor:pointer;font:700 .85rem Inter,Arial,sans-serif;color:var(--navy);padding:10px 12px}
+    .pt-switch button+button{border-left:1px solid var(--navy)}
+    .pt-switch button[aria-selected="true"]{background:var(--navy);color:#fff}
+    .pt-switch button:focus-visible,.pt-form :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+    .pt-form{background:#fff;border:1px solid var(--line);padding:34px}
+    .pt-form fieldset{border:0;margin:0 0 24px;padding:0;min-width:0}
+    .pt-form legend{font-size:.72rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:14px;padding:0}
+    .pt-row{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+    .pt-field{display:flex;flex-direction:column;gap:5px;margin-bottom:15px;min-width:0}
+    .pt-field label,.pt-check-title{font-size:.78rem;font-weight:700}
+    .opt{color:var(--muted);font-weight:500}
+    .pt-field input,.pt-field select,.pt-field textarea{width:100%;min-height:48px;padding:12px 13px;border:1px solid #bdc9d4;border-radius:3px;font:inherit;font-size:.95rem;background:#fff;color:var(--ink)}
+    .pt-field select{appearance:none;-webkit-appearance:none;padding-right:38px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23152538' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center}
+    .pt-field input:focus,.pt-field select:focus,.pt-field textarea:focus{border-color:var(--blue)}
+    .pt-field textarea{min-height:115px;resize:vertical}
+    .hint{color:var(--muted);font-size:.78rem}
+    .pt-other[hidden],[data-show][hidden]{display:none}
+    .pt-checks{display:grid;grid-template-columns:1fr 1fr;gap:0 16px;margin-top:6px}
+    .pt-checks label{display:flex;align-items:center;gap:10px;min-height:44px;font-size:.9rem;cursor:pointer}
+    .pt-checks input{width:18px;height:18px;accent-color:var(--navy);flex:none}
+    .pt-hp{position:absolute;left:-9999px}
+    .pt-submit{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;border:1px solid transparent;padding:15px 23px;font:700 .85rem Inter,Arial,sans-serif;cursor:pointer;border-radius:3px;min-height:48px}
+    .btn-dark{background:var(--navy);color:#fff}.btn-dark:hover{background:var(--blue)}.btn:disabled{opacity:.6;cursor:wait}
+    .pt-submit small{color:var(--muted);font-size:.78rem;max-width:300px;line-height:1.5}
+    .pt-status{margin-top:18px;padding:14px 16px;font-size:.92rem;line-height:1.55;border-left:3px solid #22745f;background:#e6f2ee}
+    .pt-status.err{border-left-color:var(--err);background:#f8e4e0}
+    .pt-status[hidden]{display:none}
+    .pt-status a{color:var(--ink)}
+
+    @media(max-width:900px){.pt-grid{grid-template-columns:1fr;gap:40px}}
+    @media(max-width:600px){.wrap{padding:0 20px}.hsg-logo img{height:42px}.pt-hero{padding:65px 0 55px}.pt-sec{padding:55px 0 70px}.pt-form{padding:24px 18px}.pt-row,.pt-checks{grid-template-columns:1fr;gap:0}}
+  </style>
+</head>
+<body>
+<header class="hsg-header"><div class="hsg-nav"><a class="hsg-logo" href="index.html"><img src="hsg-logo.png?v=2" alt="Hughes Strategic Group" width="760" height="199"></a><button class="hsg-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="hsg-navigation">&#9776;</button><nav class="hsg-links" id="hsg-navigation" aria-label="Main navigation"><a href="index.html#solutions">Solutions</a><a href="capabilities.html">Government Contracting</a><a href="index.html#about">Our Group</a><a href="index.html#portfolio">Portfolio</a><a href="hp.html">Technology</a><a href="partners.html" aria-current="page">Partners</a><a class="hsg-cta" href="index.html#contact">Request a Quote &rarr;</a></nav></div></header>
+
+<main>
+<section class="pt-hero"><div class="wrap">
+  <div class="eyebrow">Partner With Us</div>
+  <h1>Bring your specialty to the Hughes portfolio.</h1>
+  <p>We take on work across procurement, moving, furniture, real estate, lockers and events, and we would rather team up with a specialist than hire one. If your business does one thing well, or you want to work with one of our companies, tell us here.</p>
+</div></section>
+
+<section class="pt-sec"><div class="wrap pt-grid">
+    <div>
+      <div class="eyebrow">How it works</div>
+      <h2>Three steps, no paperwork up front.</h2>
+      <div class="pt-how">
+        <div class="pt-step"><b>01</b><div><h3>Tell us your specialty</h3><p>Pick the closest match from the list, or write in your own. Two minutes, no documents yet.</p></div></div>
+        <div class="pt-step"><b>02</b><div><h3>We match it to a venture</h3><p>We check where it fits: a government bid, a move, a furniture repair, a property rehab or an install.</p></div></div>
+        <div class="pt-step"><b>03</b><div><h3>We call you</h3><p>If there is a fit, we set up a call to talk terms, coverage area and paperwork such as insurance and W-9.</p></div></div>
+      </div>
+      <p class="pt-note">Don't send tax IDs, bank details or Social Security numbers through this form. We ask for anything like that later, through a secure channel.</p>
+    </div>
+
+    <div>
+      <div class="pt-switch" role="tablist" aria-label="Who is applying">
+        <button type="button" role="tab" id="tab-biz" aria-selected="true" aria-controls="partner-form" data-track="business">I'm a business</button>
+        <button type="button" role="tab" id="tab-ind" aria-selected="false" aria-controls="partner-form" data-track="individual">I'm applying as a person</button>
+      </div>
+
+      <form class="pt-form" id="partner-form" role="tabpanel" aria-labelledby="tab-biz" novalidate>
+        <!-- Web3Forms: replace with the access key from web3forms.com (free; it's tied to the inbox it delivers to) -->
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+        <input type="hidden" name="subject" value="New partner inquiry - hughesstrategic.net" />
+        <input type="hidden" name="from_name" value="HSG Partner Form" />
+        <input type="hidden" name="track" value="Business partner" />
+        <input type="checkbox" name="botcheck" class="pt-hp" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+        <!-- BUSINESS TRACK -->
+        <div data-show="business">
+          <fieldset>
+            <legend>Your business</legend>
+            <div class="pt-row">
+              <div class="pt-field"><label for="company">Business name</label><input id="company" name="company" autocomplete="organization" data-req="business" /></div>
+              <div class="pt-field"><label for="website">Website or social page <span class="opt">(optional)</span></label><input id="website" name="website" type="url" inputmode="url" placeholder="https://" /></div>
+            </div>
+            <div class="pt-row">
+              <div class="pt-field">
+                <label for="specialty">Specialty</label>
+                <select id="specialty" name="specialty" data-req="business" data-other="specialty-other">
+                  <option value="">Choose the closest match</option>
+                  <optgroup label="Trades &amp; property">
+                    <option>General contracting / remodeling</option>
+                    <option>Electrical</option>
+                    <option>Plumbing</option>
+                    <option>HVAC</option>
+                    <option>Roofing</option>
+                    <option>Flooring / carpet</option>
+                    <option>Painting / drywall</option>
+                    <option>Landscaping / lawn care</option>
+                    <option>Cleaning / janitorial</option>
+                  </optgroup>
+                  <optgroup label="Moving, freight &amp; logistics">
+                    <option>Moving / labor crews</option>
+                    <option>Freight / trucking / courier</option>
+                    <option>Warehousing / storage</option>
+                    <option>Junk removal / hauling</option>
+                  </optgroup>
+                  <optgroup label="Furniture &amp; goods">
+                    <option>Furniture repair / upholstery</option>
+                    <option>Furniture manufacturing / wholesale</option>
+                    <option>Liquidation / pallet supply</option>
+                    <option>Interior design / staging</option>
+                  </optgroup>
+                  <optgroup label="Real estate &amp; finance">
+                    <option>Real estate agent / broker</option>
+                    <option>Lending / private money</option>
+                    <option>Title / escrow</option>
+                    <option>Property management</option>
+                    <option>Inspection / appraisal</option>
+                  </optgroup>
+                  <optgroup label="Technology &amp; installs">
+                    <option>IT / computer hardware</option>
+                    <option>Security cameras / low-voltage</option>
+                    <option>Smart lockers / access control</option>
+                    <option>Vending / kiosks</option>
+                  </optgroup>
+                  <optgroup label="Food &amp; events">
+                    <option>Catering / food service</option>
+                    <option>Event rentals / production</option>
+                  </optgroup>
+                  <optgroup label="Professional services">
+                    <option>Government contracting / prime contractor</option>
+                    <option>Legal</option>
+                    <option>Accounting / bookkeeping</option>
+                    <option>Insurance</option>
+                    <option>Marketing / design / photography</option>
+                    <option>Staffing</option>
+                  </optgroup>
+                  <option value="Other">Other (write it in)</option>
+                </select>
+              </div>
+              <div class="pt-field">
+                <label for="ptype">How would you like to work together?</label>
+                <select id="ptype" name="partnership_type" data-req="business">
+                  <option value="">Choose one</option>
+                  <option>Subcontractor - we do the work on your jobs</option>
+                  <option>Supplier / vendor - we sell you product</option>
+                  <option>Referral partner - we send each other customers</option>
+                  <option>Joint venture - we build something together</option>
+                  <option>Teaming on a government bid</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+            </div>
+            <div class="pt-field pt-other" id="specialty-other" hidden>
+              <label for="specialty_other">Describe your specialty</label>
+              <input id="specialty_other" name="specialty_other" placeholder="e.g. commercial window tinting" />
+            </div>
+            <div class="pt-row">
+              <div class="pt-field"><label for="area">Service area</label><input id="area" name="service_area" placeholder="e.g. Houston + Fort Bend" data-req="business" /></div>
+              <div class="pt-field">
+                <label for="years">Years in business</label>
+                <select id="years" name="years_in_business">
+                  <option value="">Choose one</option>
+                  <option>Less than 1</option><option>1-3</option><option>3-10</option><option>10+</option>
+                </select>
+              </div>
+            </div>
+            <div class="pt-checks" role="group" aria-labelledby="creds-title">
+              <span class="pt-check-title" id="creds-title" style="grid-column:1/-1">What you already have <span class="opt">(check any)</span></span>
+              <label><input type="checkbox" name="has_insurance" value="Yes" /> General liability insurance</label>
+              <label><input type="checkbox" name="has_license" value="Yes" /> State or trade license</label>
+              <label><input type="checkbox" name="has_sam" value="Yes" /> SAM.gov registration</label>
+              <label><input type="checkbox" name="has_cert" value="Yes" /> HUB / MBE / WOSB / 8(a) certification</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <!-- INDIVIDUAL TRACK -->
+        <div data-show="individual" hidden>
+          <fieldset>
+            <legend>What you're applying for</legend>
+            <div class="pt-row">
+              <div class="pt-field">
+                <label for="role">Role or skill</label>
+                <select id="role" name="role" data-req="individual" data-other="role-other">
+                  <option value="">Choose the closest match</option>
+                  <option>Mover / driver (box truck)</option>
+                  <option>Furniture repair / upholstery tech</option>
+                  <option>Installer (lockers, cameras, low-voltage)</option>
+                  <option>Warehouse / inventory</option>
+                  <option>Sales / business development</option>
+                  <option>Office / admin / bookkeeping</option>
+                  <option>Marketing / content / photography</option>
+                  <option>Event staff</option>
+                  <option value="Other">Other (write it in)</option>
+                </select>
+              </div>
+              <div class="pt-field">
+                <label for="worktype">Type of work</label>
+                <select id="worktype" name="work_type" data-req="individual">
+                  <option value="">Choose one</option>
+                  <option>Full-time</option>
+                  <option>Part-time</option>
+                  <option>Per job / on call</option>
+                  <option>Independent contractor (1099)</option>
+                  <option>Internship</option>
+                </select>
+              </div>
+            </div>
+            <div class="pt-field pt-other" id="role-other" hidden>
+              <label for="role_other">Describe the role or skill</label>
+              <input id="role_other" name="role_other" placeholder="e.g. CDL driver, forklift certified" />
+            </div>
+            <div class="pt-row">
+              <div class="pt-field"><label for="ind-area">City / area you live in</label><input id="ind-area" name="home_area" autocomplete="address-level2" data-req="individual" /></div>
+              <div class="pt-field"><label for="start">Earliest start</label><input id="start" name="earliest_start" placeholder="e.g. right away, Jan 2027" /></div>
+            </div>
+            <div class="pt-field">
+              <label for="resume">Resume or LinkedIn link <span class="opt">(optional)</span></label>
+              <input id="resume" name="resume_link" type="url" inputmode="url" placeholder="https://" />
+              <span class="hint">A Google Drive or Dropbox link works. You can also email a resume after you submit.</span>
+            </div>
+            <div class="pt-checks">
+              <label><input type="checkbox" name="drivers_license" value="Yes" /> Valid driver's license</label>
+              <label><input type="checkbox" name="can_lift" value="Yes" /> Comfortable with heavy lifting</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <!-- SHARED -->
+        <fieldset>
+          <legend>Contact</legend>
+          <div class="pt-row">
+            <div class="pt-field"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required /></div>
+            <div class="pt-field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required /></div>
+          </div>
+          <div class="pt-field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" required /></div>
+          <div class="pt-checks" role="group" aria-labelledby="fit-title">
+            <span class="pt-check-title" id="fit-title" style="grid-column:1/-1">Which of our companies interests you? <span class="opt">(optional)</span></span>
+            <label><input type="checkbox" name="venture_procurement" value="Yes" /> HSG procurement</label>
+            <label><input type="checkbox" name="venture_lockers" value="Yes" /> Zen Lockers</label>
+            <label><input type="checkbox" name="venture_move" value="Yes" /> Hughes Move &amp; Tote</label>
+            <label><input type="checkbox" name="venture_living" value="Yes" /> Hughes Living Co.</label>
+            <label><input type="checkbox" name="venture_auctions" value="Yes" /> Hughes Living Auctions</label>
+            <label><input type="checkbox" name="venture_capital" value="Yes" /> Hughes Living Capital</label>
+            <label><input type="checkbox" name="venture_entertainment" value="Yes" /> HSG Entertainment</label>
+          </div>
+          <div class="pt-field" style="margin-top:14px">
+            <label for="message" id="message-label">Tell us about your work</label>
+            <textarea id="message" name="message" placeholder="What you do, who you've done it for, and what kind of work you're looking for."></textarea>
+          </div>
+        </fieldset>
+
+        <div class="pt-submit">
+          <button type="submit" class="btn btn-dark" id="pt-send">Send to Hughes Strategic Group &rarr;</button>
+          <small>We read every one and reply within a week if there's a fit.</small>
+        </div>
+        <div class="pt-status" id="pt-status" role="status" aria-live="polite" hidden></div>
+      </form>
+    </div>
+
+  </div></section>
+</main>
+
+<footer class="hsg-footer"><div class="hsg-footer-inner"><div><strong>HUGHES STRATEGIC GROUP LLC</strong><div>Operational excellence through strategic sourcing.</div><small>&copy; 2026 Hughes Strategic Group LLC &middot; Houston, TX</small></div><div><a href="index.html">Home</a><a href="capabilities.html">Capabilities</a><a href="hp.html">Technology</a><a href="partners.html">Partners</a><a href="index.html#contact">Contact</a></div></div></footer>
+<script>const hsgToggle=document.querySelector('.hsg-toggle'),hsgLinks=document.querySelector('.hsg-links');hsgToggle.addEventListener('click',()=>{const open=hsgLinks.classList.toggle('open');hsgToggle.setAttribute('aria-expanded',String(open))});hsgLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{hsgLinks.classList.remove('open');hsgToggle.setAttribute('aria-expanded','false')}))</script>
+<script>
+(function () {
+  var form = document.getElementById('partner-form');
+  var tabs = document.querySelectorAll('.pt-switch button');
+  var trackInput = form.querySelector('input[name="track"]');
+  var subject = form.querySelector('input[name="subject"]');
+  var status = document.getElementById('pt-status');
+  var send = document.getElementById('pt-send');
+  var msgLabel = document.getElementById('message-label');
+  var msg = document.getElementById('message');
+  var track = 'business';
+
+  function setTrack(t) {
+    track = t;
+    tabs.forEach(function (b) {
+      var on = b.dataset.track === t;
+      b.setAttribute('aria-selected', on);
+      if (on) form.setAttribute('aria-labelledby', b.id);
+    });
+    form.querySelectorAll('[data-show]').forEach(function (block) {
+      var on = block.dataset.show === t;
+      block.hidden = !on;
+      // disabled fields are left out of the submission, so the other track's answers never send
+      block.querySelectorAll('input, select, textarea').forEach(function (f) { f.disabled = !on; });
+    });
+    trackInput.value = t === 'business' ? 'Business partner' : 'Individual application';
+    subject.value = (t === 'business' ? 'New partner inquiry' : 'New application') + ' - hughesstrategic.net';
+    msgLabel.textContent = t === 'business' ? 'Tell us about your work' : 'Tell us about yourself';
+    msg.placeholder = t === 'business'
+      ? "What you do, who you've done it for, and what kind of work you're looking for."
+      : 'Your experience, what you are good at, and when you can work.';
+    syncOthers();
+  }
+
+  function syncOthers() {
+    form.querySelectorAll('select[data-other]').forEach(function (sel) {
+      var box = document.getElementById(sel.dataset.other);
+      var on = !sel.disabled && sel.value === 'Other';
+      box.hidden = !on;
+      box.querySelector('input').disabled = !on;
+      box.querySelector('input').required = on;
+    });
+  }
+
+  tabs.forEach(function (b) { b.addEventListener('click', function () { setTrack(b.dataset.track); }); });
+  form.addEventListener('change', function (e) { if (e.target.matches('select[data-other]')) syncOthers(); });
+  setTrack('business');
+
+  function show(text, isErr) {
+    status.innerHTML = text;
+    status.className = 'pt-status' + (isErr ? ' err' : '');
+    status.hidden = false;
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    form.querySelectorAll('[data-req]').forEach(function (f) { f.required = !f.disabled; });
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+
+    var key = form.querySelector('input[name="access_key"]').value;
+    if (key.indexOf('YOUR_') === 0) {
+      show('The form isn\'t connected yet. Please email <a href="mailto:jayhughes@hughesstrategic.net">jayhughes@hughesstrategic.net</a> or call <a href="tel:8327242007">832 724 2007</a>.', true);
+      return;
+    }
+
+    send.disabled = true;
+    send.textContent = 'Sending...';
+    fetch('https://api.web3forms.com/submit', { method: 'POST', body: new FormData(form) })
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        if (!d.success) throw new Error(d.message || 'failed');
+        form.reset();
+        setTrack(track);
+        show(track === 'business'
+          ? 'Thanks. Your partner inquiry is in. If there\'s a fit we\'ll call you within a week.'
+          : 'Thanks. Your application is in. If there\'s a fit we\'ll call you within a week.');
+      })
+      .catch(function () {
+        show('That didn\'t go through. Please try again, or email <a href="mailto:jayhughes@hughesstrategic.net">jayhughes@hughesstrategic.net</a>.', true);
+      })
+      .finally(function () { send.disabled = false; send.innerHTML = 'Send to Hughes Strategic Group &rarr;'; });
+  });
+})();
+</script>
+</body>
+</html>
